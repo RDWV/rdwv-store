@@ -111,7 +111,7 @@ export default {
     return {
       script: [
         {
-          src: `//${this.$store.getters.adminHost}/modal/bitcart.js`,
+          src: `//${this.$store.getters.adminHost}/modal/rdwv.js`,
           async: true,
         },
       ],
@@ -182,7 +182,7 @@ export default {
             discount: "0",
             tip: "0",
           }
-          window.bitcart.onModalReceiveMessage((data) => {
+          window.rdwv.onModalReceiveMessage((data) => {
             if (typeof data.data === "object" && "status" in data.data) {
               this.status = data.data.status
               if (["paid", "confirmed", "complete"].includes(this.status)) {
@@ -190,10 +190,10 @@ export default {
                   window.location = this.invoice.redirect_url
                 }
               }
-              window.bitcart.hideFrame()
+              window.rdwv.hideFrame()
             }
           })
-          window.bitcart.showInvoice(res.data.id)
+          window.rdwv.showInvoice(res.data.id)
         })
     },
     getButtonType(type) {

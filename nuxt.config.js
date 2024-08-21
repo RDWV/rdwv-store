@@ -41,7 +41,7 @@ export default {
         name: "description",
         content: process.env.npm_package_description || "",
       },
-      { hid: "og:site_name", property: "og:site_name", content: "Bitcart" },
+      { hid: "og:site_name", property: "og:site_name", content: "RedWaves" },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -64,20 +64,20 @@ export default {
   css: ["@/assets/scss/main.scss"],
   router: {
     middleware: ["onion"],
-    base: process.env.BITCART_STORE_ROOTPATH || "/",
+    base: process.env.RDWV_STORE_ROOTPATH || "/",
   },
   /*
    ** Runtime config
    */
   publicRuntimeConfig: {
-    URL: process.env.BITCART_STORE_API_URL || "http://localhost:8000",
-    SOCKS_PROXY: process.env.BITCART_STORE_SOCKS_PROXY || "",
-    ONION_API_URL: process.env.BITCART_STORE_ONION_API_URL || "",
-    ONION_HOST: process.env.BITCART_STORE_ONION_HOST || "",
-    ONION_ADMIN_HOST: process.env.BITCART_ADMIN_ONION_HOST || "",
-    ADMIN_HOST: process.env.BITCART_ADMIN_HOST || "localhost:3000",
-    ROOTPATH: process.env.BITCART_STORE_ROOTPATH || "/",
-    ADMIN_ROOTPATH: process.env.BITCART_ADMIN_ROOTPATH || "/",
+    URL: process.env.RDWV_STORE_API_URL || "http://localhost:8000",
+    SOCKS_PROXY: process.env.RDWV_STORE_SOCKS_PROXY || "",
+    ONION_API_URL: process.env.RDWV_STORE_ONION_API_URL || "",
+    ONION_HOST: process.env.RDWV_STORE_ONION_HOST || "",
+    ONION_ADMIN_HOST: process.env.RDWV_ADMIN_ONION_HOST || "",
+    ADMIN_HOST: process.env.RDWV_ADMIN_HOST || "localhost:3000",
+    ROOTPATH: process.env.RDWV_STORE_ROOTPATH || "/",
+    ADMIN_ROOTPATH: process.env.RDWV_ADMIN_ROOTPATH || "/",
   },
   /*
    ** Plugins to load before mounting the App

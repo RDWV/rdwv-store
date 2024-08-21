@@ -23,7 +23,7 @@
           <p class="pt-3">
             Check out
             <a
-              href="https://docs.bitcart.ai/support-and-community/troubleshooting-an-issue"
+              href="https://docs.rdwv.ai/support-and-community/troubleshooting-an-issue"
               target="_blank"
               >this guide</a
             >
@@ -32,10 +32,10 @@
           <p class="text-h6">
             Quick steps to try:<br />
             1. Ensure merchants API is running. If you are developing locally,
-            Bitcart assumes it is running on port 8000 by default.<br />
-            2. Make sure <code>BITCART_ADMIN_API_URL</code> is set to the
+            RedWaves assumes it is running on port 8000 by default.<br />
+            2. Make sure <code>RDWV_ADMIN_API_URL</code> is set to the
             correct URL.<br />
-            3. If you are using Bitcart with ssl enabled, Merchants API's ssl
+            3. If you are using RedWaves with ssl enabled, Merchants API's ssl
             certificate might not have been generated yet. Please retry a bit
             later.
           </p>

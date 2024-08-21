@@ -1,7 +1,7 @@
 {
-  "name": "bitcart-store",
+  "name": "rdwv-store",
   "version": "1.0.0",
-  "description": "Bitcart Store",
+  "description": "RedWaves Store",
   "author": "MrNaif2018",
   "private": true,
   "scripts": {

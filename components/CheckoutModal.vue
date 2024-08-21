@@ -108,7 +108,7 @@ export default {
     return {
       script: [
         {
-          src: `//${this.$store.getters.adminHost}/modal/bitcart.js`,
+          src: `//${this.$store.getters.adminHost}/modal/rdwv.js`,
           async: true,
           callback: () => {
             this.continueCreation()
@@ -128,8 +128,8 @@ export default {
       "setActualStep",
     ]),
     reopenModal() {
-      window.bitcart.showInvoice(this.invoice.id)
-      window.bitcart.showFrame()
+      window.rdwv.showInvoice(this.invoice.id)
+      window.rdwv.showFrame()
     },
     continueCreation() {
       const cart = Object.assign(
@@ -148,7 +148,7 @@ export default {
           notes: this.notes,
         })
         .then((res) => {
-          window.bitcart.onModalReceiveMessage((data) => {
+          window.rdwv.onModalReceiveMessage((data) => {
             if (typeof data.data === "object" && "status" in data.data) {
               this.status = data.data.status
               if (["paid", "confirmed", "complete"].includes(this.status)) {
@@ -162,11 +162,11 @@ export default {
                 this.setSuccess(false)
               }
               this.showCheckout = false
-              window.bitcart.hideFrame()
+              window.rdwv.hideFrame()
             }
           })
           this.invoice = res.data
-          window.bitcart.showInvoice(res.data.id)
+          window.rdwv.showInvoice(res.data.id)
           this.loading = false
         })
         .catch((err) => {

@@ -13,7 +13,7 @@
       .hero-foot
         UIExtensionSlot(name="footer")
           .container
-            p &copy; Bitcart v{{VERSION}}
+            p &copy; RedWaves v{{VERSION}}
       UIExtensionSlot(name="cart_sidebar")
         app-cart-sidebar
 </template>
@@ -45,7 +45,7 @@ export default {
   head() {
     const themeURL = this.$store.state.store?.theme_settings?.store_theme_url
     const commonHead = !this.$utils.isEmpty(this.$store.state.store)
-      ? { title: `${this.$store.state.store.name} | bitcart-store` }
+      ? { title: `${this.$store.state.store.name} | rdwv-store` }
       : {}
     return this.$utils.getExtendSetting.call(
       this,

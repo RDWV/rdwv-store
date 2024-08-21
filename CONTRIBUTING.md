@@ -1,20 +1,20 @@
-# Contributing to Bitcart Store
+# Contributing to RedWaves Store
 
-Welcome, and thank you for your interest in contributing to Bitcart Store!
+Welcome, and thank you for your interest in contributing to RedWaves Store!
 
-Our [central contributing guidelines](https://github.com/bitcart/bitcart/blob/master/CONTRIBUTING.md) apply to all Bitcart repositories.
+Our [central contributing guidelines](https://github.com/rdwv/rdwv/blob/master/CONTRIBUTING.md) apply to all RedWaves repositories.
 
-Below are the instructions for setting up development environment with Bitcart Store.
+Below are the instructions for setting up development environment with RedWaves Store.
 
 ## Setting up development environment
 
-Some general advice can be found in our [central contributing guidelines](https://github.com/bitcart/bitcart/blob/master/CONTRIBUTING.md#setting-up-development-environment).
+Some general advice can be found in our [central contributing guidelines](https://github.com/rdwv/rdwv/blob/master/CONTRIBUTING.md#setting-up-development-environment).
 
 Installation instructions:
 
 ```bash
-git clone https://github.com/<<<your-github-account>>>/bitcart-store.git
-cd bitcart-store
+git clone https://github.com/<<<your-github-account>>>/rdwv-store.git
+cd rdwv-store
 yarn
 ```
 
@@ -38,7 +38,7 @@ curl https://pre-commit.com/install-local.py | python3 -
 pre-commit install
 ```
 
-Make sure to follow [our coding guidelines](https://github.com/bitcart/bitcart/blob/master/CODING_STANDARDS.md) when developing.
+Make sure to follow [our coding guidelines](https://github.com/rdwv/rdwv/blob/master/CODING_STANDARDS.md) when developing.
 
 # Thank You!
 
