@@ -20,7 +20,6 @@
             b-pagination.stick.is-marginless(:total="total"
               :current.sync="current"
               :per-page="perPage"
-              order="is-centered"
               aria-next-label="Next page"
               aria-previous-label="Previous page"
               aria-page-label="Page"
